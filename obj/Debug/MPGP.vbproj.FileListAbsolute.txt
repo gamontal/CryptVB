@@ -1,0 +1,118 @@
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.exe.config
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.exe.manifest
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.application
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.exe
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.pdb
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\bin\Debug\cipherbox.xml
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.CustomMsgBox.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.MPGPmainForm.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.CreatePassword.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.INFO.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.Resources.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.InputBoxTxt.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.UnlockFile.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\MPGP.vbproj.GenerateResource.Cache
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.exe.manifest
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.application
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.exe
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.xml
+C:\Users\Gabe\Desktop\VS (directory folder)\EncryptAndDecryptProject\EncryptAndDecryptProject\obj\Debug\cipherbox.pdb
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\EncryptAndDecryptProject\bin\Debug\cipherbox.exe.config
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\EncryptAndDecryptProject\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\EncryptAndDecryptProject\obj\Debug\cipherbox.exe
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\EncryptAndDecryptProject\obj\Debug\cipherbox.xml
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\EncryptAndDecryptProject\obj\Debug\cipherbox.pdb
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.exe.config
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.exe
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.xml
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.pdb
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.exe.manifest
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.application
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.exe
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.pdb
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\bin\Debug\cipherbox.xml
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.CustomMsgBox.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.MPGPmainForm.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.CreatePassword.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.INFO.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.Resources.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.InputBoxTxt.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.UnlockFile.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\MPGP.vbproj.GenerateResource.Cache
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.exe.manifest
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.application
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\cipherbox.mailWin.resources
+C:\Users\Gabe\Desktop\VS (directory folder)\MPGP\MPGP\obj\Debug\MPGP.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\bin\Debug\cipherbox.exe.config
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\obj\Debug\cipherbox.exe
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\obj\Debug\cipherbox.xml
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\obj\Debug\cipherbox.pdb
+C:\Users\admin\Desktop\VisualS\MPGP\MPGP\obj\Debug\MPGP.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe.config
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.exe
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.xml
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.pdb
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\MPGP.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe.manifest
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.application
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.pdb
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\bin\Debug\cipherbox.xml
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.CustomMsgBox.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.mailWin.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.MPGPmainForm.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.CreatePassword.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.INFO.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.Resources.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.InputBoxTxt.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.UnlockFile.resources
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\MPGP.vbproj.GenerateResource.Cache
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.exe.manifest
+C:\Users\admin\Desktop\desktop\visuals\MPGP\MPGP\obj\Debug\cipherbox.application
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe.config
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.exe
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.xml
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.pdb
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe.manifest
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.application
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.exe
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.pdb
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\bin\Debug\cipherbox.xml
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\MPGP.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.CustomMsgBox.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.mailWin.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.MPGPmainForm.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.CreatePassword.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.INFO.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.Resources.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.InputBoxTxt.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.UnlockFile.resources
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\MPGP.vbproj.GenerateResource.Cache
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.exe.manifest
+C:\Users\admin\Desktop\desktop files\visuals\MPGP\MPGP\obj\Debug\cipherbox.application
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.exe.config
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.vbprojResolveAssemblyReference.cache
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.Resources.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.vbproj.GenerateResource.Cache
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.exe.manifest
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.exe
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.xml
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.pdb
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.exe.manifest
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.application
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.exe
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.pdb
+C:\Users\admin\repos\MPGP\bin\Debug\MPGP.xml
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.application
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.PasswordAuthentication.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.MainSrc.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.MailClient.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.PswrdCreation.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.PlainTextEdt.resources
+C:\Users\admin\repos\MPGP\obj\Debug\MPGP.ShowTextWnd.resources
