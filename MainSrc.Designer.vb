@@ -41,7 +41,7 @@ Partial Class MainSrc
         Me.btnEncipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnEncipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnEncipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnEncipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEncipher.ForeColor = System.Drawing.Color.Black
         Me.HelpProvider1.SetHelpString(Me.btnEncipher, "Encrypt text. (you can set your file's destination once you create your password)" & _
         "")
@@ -61,7 +61,7 @@ Partial Class MainSrc
         Me.btnDecipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnDecipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnDecipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnDecipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDecipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDecipher.ForeColor = System.Drawing.Color.Black
         Me.HelpProvider1.SetHelpString(Me.btnDecipher, "Decrypt text. ( *Hidden files will become visible once you decipher them. To chan" & _
         "ge this setting, go to the file's properties, check hidden and click ok )")
@@ -81,8 +81,7 @@ Partial Class MainSrc
         Me.btnUnhide.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnUnhide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnUnhide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnUnhide.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnUnhide.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!)
+        Me.btnUnhide.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
         Me.btnUnhide.ForeColor = System.Drawing.Color.Black
         Me.btnUnhide.Location = New System.Drawing.Point(17, 110)
         Me.btnUnhide.Name = "btnUnhide"
@@ -98,7 +97,7 @@ Partial Class MainSrc
         Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnClose.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!)
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
         Me.btnClose.ForeColor = System.Drawing.Color.Black
         Me.btnClose.Location = New System.Drawing.Point(17, 141)
         Me.btnClose.Name = "btnClose"
@@ -115,7 +114,7 @@ Partial Class MainSrc
         Me.btnEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 8.25!)
+        Me.btnEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
         Me.btnEmail.ForeColor = System.Drawing.Color.Black
         Me.btnEmail.Location = New System.Drawing.Point(17, 79)
         Me.btnEmail.Name = "btnEmail"
@@ -126,15 +125,16 @@ Partial Class MainSrc
         '
         'cmbAlgorithm
         '
+        Me.cmbAlgorithm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbAlgorithm.FormattingEnabled = True
         Me.cmbAlgorithm.Items.AddRange(New Object() {"RC2", "DES", "3DES", "AES"})
         Me.cmbAlgorithm.Location = New System.Drawing.Point(17, 181)
         Me.cmbAlgorithm.Name = "cmbAlgorithm"
-        Me.cmbAlgorithm.Size = New System.Drawing.Size(174, 21)
+        Me.cmbAlgorithm.Size = New System.Drawing.Size(174, 23)
         Me.cmbAlgorithm.TabIndex = 14
         Me.cmbAlgorithm.Text = "Encryption algorithm"
         '
-        'MPGPmainForm
+        'MainSrc
         '
         Me.AcceptButton = Me.btnEncipher
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -154,7 +154,7 @@ Partial Class MainSrc
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "MPGPmainForm"
+        Me.Name = "MainSrc"
         Me.HelpProvider1.SetShowHelp(Me, True)
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

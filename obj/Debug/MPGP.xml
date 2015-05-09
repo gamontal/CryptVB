@@ -15,46 +15,6 @@ MPGP
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnDecipher_Click___">
-	<summary>
-  Looks up a localized string similar to  .
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnDecipher_Click_Do_you_wish_to_decipher_a_hidden_file_">
-	<summary>
-  Looks up a localized string similar to Do you wish to decipher a hidden file?.
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_">
-	<summary>
-  Looks up a localized string similar to Error, no password entered. Press OK to exit..
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________">
-	<summary>
-  Looks up a localized string similar to Text Files (*.txt)|*.txt|All Files (*.*)|*.*.
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_">
-	<summary>
-  Looks up a localized string similar to The data could not be decrypted with the password..
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnEncipher_Click___">
-	<summary>
-  Looks up a localized string similar to  .
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnEncipher_Click_GetFullPath___0____returns___1__">
-	<summary>
-  Looks up a localized string similar to GetFullPath('{0}') returns '{1}'.
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_">
-	<summary>
-  Looks up a localized string similar to Hide encrypted file?.
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_">
-	<summary>
-  Looks up a localized string similar to No password entered. Press OK to exit..
-</summary>
-</member><member name="P:MPGP.My.Resources.Resources.CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt">
-	<summary>
-  Looks up a localized string similar to TXT Files (*.txt*)|*.txt.
-</summary>
 </member><member name="T:MPGP.My.Resources.Resources">
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.

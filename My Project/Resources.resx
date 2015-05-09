@@ -117,34 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_" xml:space="preserve">
-    <value>No password entered. Press OK to exit.</value>
-  </data>
-  <data name="CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt" xml:space="preserve">
-    <value>TXT Files (*.txt*)|*.txt</value>
-  </data>
-  <data name="CipherboxMainform_btnEncipher_Click_GetFullPath___0____returns___1__" xml:space="preserve">
-    <value>GetFullPath('{0}') returns '{1}'</value>
-  </data>
-  <data name="CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_" xml:space="preserve">
-    <value>Hide encrypted file?</value>
-  </data>
-  <data name="CipherboxMainform_btnEncipher_Click___" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="CipherboxMainform_btnDecipher_Click_Do_you_wish_to_decipher_a_hidden_file_" xml:space="preserve">
-    <value>Do you wish to decipher a hidden file?</value>
-  </data>
-  <data name="CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________" xml:space="preserve">
-    <value>Text Files (*.txt)|*.txt|All Files (*.*)|*.*</value>
-  </data>
-  <data name="CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_" xml:space="preserve">
-    <value>The data could not be decrypted with the password.</value>
-  </data>
-  <data name="CipherboxMainform_btnDecipher_Click___" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_" xml:space="preserve">
-    <value>Error, no password entered. Press OK to exit.</value>
-  </data>
 </root>

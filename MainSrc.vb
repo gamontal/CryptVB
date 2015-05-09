@@ -2,7 +2,6 @@
 Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Text
-Imports MPGP.My.Resources
 
 Public Class MainSrc
     Private Const CancelClicked As String = ""
@@ -115,7 +114,7 @@ Public Class MainSrc
 
 
         If password = "" Then
-            MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+            MessageBox.Show("Error, no password entered. Press OK to exit.", "")
             Exit Sub
         Else
             Do Until CheckForAlphaCharacters(password) = True
@@ -127,7 +126,7 @@ Public Class MainSrc
                 c.ShowDialog("Set Password", "Password: ", "", textReturned, False)
                 password = textReturned
                 If password = CancelClicked Then
-                    MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "")
                     Exit Sub
                 End If
             Loop
@@ -139,11 +138,11 @@ Public Class MainSrc
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
 
-            saveFileDialog1.Filter = CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt ' .txt files only
+            saveFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' .txt files only
             saveFileDialog1.DefaultExt = "txt" ' default extension
             saveFileDialog1.FileName = "" ' default file name
             saveFileDialog1.CheckPathExists = True
-            saveFileDialog1.Title = "Select File Destination"
+            saveFileDialog1.Title = "file path ?"
 
             If saveFileDialog1.ShowDialog = DialogResult.OK _
                 Then
@@ -155,7 +154,7 @@ Public Class MainSrc
 
                 File.SetAttributes(savedFilepath, File.GetAttributes(savedFilepath) Or FileAttributes.ReadOnly)
 
-                Dim hiddenOk As Integer = MessageBox.Show(CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_, CipherboxMainform_btnEncipher_Click___, MessageBoxButtons.YesNo)
+                Dim hiddenOk As Integer = MessageBox.Show("Hide encrypted file?", " ", MessageBoxButtons.YesNo)
 
                 If hiddenOk = DialogResult.No Then
                     Exit Sub
@@ -202,7 +201,7 @@ Public Class MainSrc
 
 
         If password = "" Then
-            MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+            MessageBox.Show("Error, no password entered. Press OK to exit.", "")
             Exit Sub
         Else
             Do Until CheckForAlphaCharacters(password) = True
@@ -214,7 +213,7 @@ Public Class MainSrc
                 c.ShowDialog("Set Password", "Password: ", "", textReturned, False)
                 password = textReturned
                 If password = CancelClicked Then
-                    MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "")
                     Exit Sub
                 End If
             Loop
@@ -224,11 +223,11 @@ Public Class MainSrc
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
 
-            saveFileDialog1.Filter = CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt ' .txt files only
+            saveFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' .txt files only
             saveFileDialog1.DefaultExt = "txt" ' default extension
             saveFileDialog1.FileName = "" ' default file name
             saveFileDialog1.CheckPathExists = True
-            saveFileDialog1.Title = "Select File Destination"
+            saveFileDialog1.Title = "file path ?"
 
             If saveFileDialog1.ShowDialog = DialogResult.OK _
                 Then
@@ -240,7 +239,7 @@ Public Class MainSrc
 
                 File.SetAttributes(savedFilepath, File.GetAttributes(savedFilepath) Or FileAttributes.ReadOnly)
 
-                Dim hiddenOk As Integer = MessageBox.Show(CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_, CipherboxMainform_btnEncipher_Click___, MessageBoxButtons.YesNo)
+                Dim hiddenOk As Integer = MessageBox.Show("Hide encrypted file?", " ", MessageBoxButtons.YesNo)
 
                 If hiddenOk = DialogResult.No Then
                     Exit Sub
@@ -287,7 +286,7 @@ Public Class MainSrc
 
 
         If password = "" Then
-            MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+            MessageBox.Show("Error, no password entered. Press OK to exit.", "")
             Exit Sub
         Else
             Do Until CheckForAlphaCharacters(password) = True
@@ -299,7 +298,7 @@ Public Class MainSrc
                 c.ShowDialog("Set Password", "Password: ", "", textReturned, False)
                 password = textReturned
                 If password = CancelClicked Then
-                    MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "")
                     Exit Sub
                 End If
             Loop
@@ -311,11 +310,11 @@ Public Class MainSrc
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
 
-            saveFileDialog1.Filter = CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt ' .txt files only
+            saveFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' .txt files only
             saveFileDialog1.DefaultExt = "txt" ' default extension
             saveFileDialog1.FileName = "" ' default file name
             saveFileDialog1.CheckPathExists = True
-            saveFileDialog1.Title = "Select File Destination"
+            saveFileDialog1.Title = "file path ?"
 
 
             If saveFileDialog1.ShowDialog = DialogResult.OK _
@@ -328,7 +327,7 @@ Public Class MainSrc
 
                 File.SetAttributes(savedFilepath, File.GetAttributes(savedFilepath) Or FileAttributes.ReadOnly)
 
-                Dim hiddenOk As Integer = MessageBox.Show(CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_, CipherboxMainform_btnEncipher_Click___, MessageBoxButtons.YesNo)
+                Dim hiddenOk As Integer = MessageBox.Show("Hide encrypted file?", " ", MessageBoxButtons.YesNo)
 
                 If hiddenOk = DialogResult.No Then
                     Exit Sub
@@ -375,7 +374,7 @@ Public Class MainSrc
 
 
         If password = "" Then
-            MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+            MessageBox.Show("Error, no password entered. Press OK to exit.", "")
             Exit Sub
         Else
             Do Until CheckForAlphaCharacters(password) = True
@@ -387,7 +386,7 @@ Public Class MainSrc
                 c.ShowDialog("Set Password", "Password: ", "", textReturned, False)
                 password = textReturned
                 If password = CancelClicked Then
-                    MessageBox.Show(CipherboxMainform_btnEncipher_Click_No_password_entered__Press_OK_to_exit_, "")
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "")
                     Exit Sub
                 End If
             Loop
@@ -399,11 +398,11 @@ Public Class MainSrc
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
 
-            saveFileDialog1.Filter = CipherboxMainform_btnEncipher_Click_TXT_Files____txt_____txt ' .txt files only
+            saveFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' .txt files only
             saveFileDialog1.DefaultExt = "txt" ' default extension
             saveFileDialog1.FileName = "" ' default file name
             saveFileDialog1.CheckPathExists = True
-            saveFileDialog1.Title = "Select File Destination"
+            saveFileDialog1.Title = "file path ?"
 
 
             If saveFileDialog1.ShowDialog = DialogResult.OK _
@@ -416,7 +415,7 @@ Public Class MainSrc
 
                 File.SetAttributes(savedFilepath, File.GetAttributes(savedFilepath) Or FileAttributes.ReadOnly)
 
-                Dim hiddenOk As Integer = MessageBox.Show(CipherboxMainform_btnEncipher_Click_Hide_encrypted_file_, CipherboxMainform_btnEncipher_Click___, MessageBoxButtons.YesNo)
+                Dim hiddenOk As Integer = MessageBox.Show("Hide encrypted file?", " ", MessageBoxButtons.YesNo)
 
                 If hiddenOk = DialogResult.No Then
                     Exit Sub
@@ -455,7 +454,7 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________ ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
@@ -486,11 +485,11 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show(CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_, "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
 
                     End Try
                 Else
-                    MessageBox.Show(CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_, "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
 
                     Exit Sub
                 End If
@@ -512,7 +511,7 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________ ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
@@ -543,11 +542,11 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show(CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_, "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
 
                     End Try
                 Else
-                    MessageBox.Show(CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_, "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
 
                     Exit Sub
                 End If
@@ -569,7 +568,7 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________ ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
@@ -600,11 +599,11 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show(CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_, "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
 
                     End Try
                 Else
-                    MessageBox.Show(CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_, "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
 
                     Exit Sub
                 End If
@@ -626,7 +625,7 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = CipherboxMainform_btnDecipher_Click_Text_Files____txt____txt_All_Files__________ ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
@@ -657,11 +656,11 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show(CipherboxMainform_btnDecipher_Click_The_data_could_not_be_decrypted_with_the_password_, "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
 
                     End Try
                 Else
-                    MessageBox.Show(CipherboxMainform_btnDecipher_Click_Error__no_password_entered__Press_OK_to_exit_, "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
 
                     Exit Sub
                 End If
