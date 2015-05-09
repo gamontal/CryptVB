@@ -35,7 +35,8 @@ Public Class PlainTextEdt
         ' word count
         Static rex As New System.Text.RegularExpressions.Regex("\b", System.Text.RegularExpressions.RegexOptions.Compiled Or System.Text.RegularExpressions.RegexOptions.Multiline)
 
-        ' ReSharper disable once LocalizableElement
+        '' **
+
         lblWords.Text = "Words: " & (rex.Matches(txtPlainText.Text).Count / 2).ToString()
 
 
