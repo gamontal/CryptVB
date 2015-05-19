@@ -5,8 +5,8 @@ Imports System.Text
 
 Public Class MainSrc
     Private Const CancelClicked As String = ""
-    ReadOnly saveFileDialog1 As New SaveFileDialog() ' Save as window 
-    ReadOnly openFileDialog1 As New OpenFileDialog() ' Open file window 
+    ReadOnly saveFileDialog1 As New SaveFileDialog() 
+    ReadOnly openFileDialog1 As New OpenFileDialog() 
     Dim oReader As StreamReader ' file finder
     Dim savedFilepath As String
     ReadOnly i As New PlainTextEdt
@@ -232,7 +232,7 @@ Public Class MainSrc
             If saveFileDialog1.ShowDialog = DialogResult.OK _
                 Then
 
-                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) ' get file directory
+                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) 
 
                 My.Computer.FileSystem.WriteAllText _
                     (saveFileDialog1.FileName, cipherText, True)
@@ -320,7 +320,7 @@ Public Class MainSrc
             If saveFileDialog1.ShowDialog = DialogResult.OK _
                 Then
 
-                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) ' get file directory
+                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) 
 
                 My.Computer.FileSystem.WriteAllText _
                     (saveFileDialog1.FileName, cipherText, True)
@@ -408,7 +408,7 @@ Public Class MainSrc
             If saveFileDialog1.ShowDialog = DialogResult.OK _
                 Then
 
-                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) ' get file directory
+                savedFilepath = Path.GetFullPath(saveFileDialog1.FileName) 
 
                 My.Computer.FileSystem.WriteAllText _
                     (saveFileDialog1.FileName, cipherText, True)
@@ -454,15 +454,15 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" 
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
         If openFileDialog1.ShowDialog = DialogResult.OK Then
 
-            fullPath = Path.GetFullPath(openFileDialog1.FileName) ' get file directory
+            fullPath = Path.GetFullPath(openFileDialog1.FileName) 
 
-            Dim state As Boolean = CheckifFileisEncoded(fullPath) ' check if the content is encrypted 
+            Dim state As Boolean = CheckifFileisEncoded(fullPath) ' check if content is encrypted 
 
             If state = True Then
                 Dim fileReader As New StreamReader(fullPath)
@@ -485,17 +485,17 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") 
 
                     End Try
                 Else
-                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") 
 
                     Exit Sub
                 End If
 
             Else
-                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") ' error message
+                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") 
 
                 Exit Sub
             End If
@@ -511,15 +511,15 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" 
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
         If openFileDialog1.ShowDialog = DialogResult.OK Then
 
-            fullPath = Path.GetFullPath(openFileDialog1.FileName) ' get file directory
+            fullPath = Path.GetFullPath(openFileDialog1.FileName) 
 
-            Dim state As Boolean = CheckifFileisEncoded(fullPath) ' check if the content is encrypted 
+            Dim state As Boolean = CheckifFileisEncoded(fullPath) 
 
             If state = True Then
                 Dim fileReader As New StreamReader(fullPath)
@@ -531,7 +531,7 @@ Public Class MainSrc
 
                 u.ShowDialog(" ", "Password: ", "", textReturned, False)
 
-                Dim password As String = textReturned ' prompts user for password input
+                Dim password As String = textReturned 
 
                 If password <> "" Then
                     Dim wrapper As New AESclass(password)
@@ -542,17 +542,17 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") 
 
                     End Try
                 Else
-                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") 
 
                     Exit Sub
                 End If
 
             Else
-                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") ' error message
+                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") 
 
                 Exit Sub
             End If
@@ -574,9 +574,9 @@ Public Class MainSrc
 
         If openFileDialog1.ShowDialog = DialogResult.OK Then
 
-            fullPath = Path.GetFullPath(openFileDialog1.FileName) ' get file directory
+            fullPath = Path.GetFullPath(openFileDialog1.FileName) 
 
-            Dim state As Boolean = CheckifFileisEncoded(fullPath) ' check if the content is encrypted 
+            Dim state As Boolean = CheckifFileisEncoded(fullPath) 
 
             If state = True Then
                 Dim fileReader As New StreamReader(fullPath)
@@ -599,17 +599,17 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") 
 
                     End Try
                 Else
-                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") 
 
                     Exit Sub
                 End If
 
             Else
-                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") ' error message
+                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") 
 
                 Exit Sub
             End If
@@ -625,15 +625,15 @@ Public Class MainSrc
         openFileDialog1.CheckPathExists = True
         openFileDialog1.DefaultExt = "txt" ' default extension
         openFileDialog1.FileName = ""
-        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" ' text restrictions
+        openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*" 
         openFileDialog1.Multiselect = False
         ' open existing file commands
 
         If openFileDialog1.ShowDialog = DialogResult.OK Then
 
-            fullPath = Path.GetFullPath(openFileDialog1.FileName) ' get file directory
+            fullPath = Path.GetFullPath(openFileDialog1.FileName) 
 
-            Dim state As Boolean = CheckifFileisEncoded(fullPath) ' check if the content is encrypted 
+            Dim state As Boolean = CheckifFileisEncoded(fullPath) 
 
             If state = True Then
                 Dim fileReader As New StreamReader(fullPath)
@@ -656,17 +656,17 @@ Public Class MainSrc
                         cMsg.ShowDialog(plainText, "Plaintext: ")
 
                     Catch ex As CryptographicException
-                        MessageBox.Show("The data could not be decrypted with the password.", "") ' error message
+                        MessageBox.Show("The data could not be decrypted with the password.", "") 
 
                     End Try
                 Else
-                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") ' error message
+                    MessageBox.Show("Error, no password entered. Press OK to exit.", "") 
 
                     Exit Sub
                 End If
 
             Else
-                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") ' error message
+                MsgBox("There was an error opening your file", MsgBoxStyle.Critical, "") 
 
                 Exit Sub
             End If
