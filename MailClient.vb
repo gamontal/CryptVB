@@ -4,7 +4,7 @@ Imports System.IO
 Public Class MailClient
 
     ReadOnly openFileDialog1 As New OpenFileDialog()
-    Dim fullPath As String ' this variable will store the attachment file's path
+    Dim fullPath As String 
 
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
 
@@ -20,24 +20,24 @@ Public Class MailClient
 
         Dim e_mail As New MailMessage() ' represents email message
 
-        e_mail.From = New MailAddress(username) '.From sets from address
-        e_mail.To.Add(recipient) ' .To.Add() sets To address
-        e_mail.Subject = txtSubject.Text ' .Subject sets the subject
-        e_mail.Body = "Sent using MPGP software." ' .Body sets the body of the message
+        e_mail.From = New MailAddress(username) 
+        e_mail.To.Add(recipient) 
+        e_mail.Subject = txtSubject.Text 
+        e_mail.Body = "Sent using MPGP software." 
 
-        Dim msgAtt As New Attachment(fullPath) ' sets attachment
+        Dim msgAtt As New Attachment(fullPath) 
 
-        e_mail.Attachments.Add(msgAtt) 'adds the attachment to the message
+        e_mail.Attachments.Add(msgAtt) 
 
         Try
-            SMTP.Send(e_mail) ' sends email
+            SMTP.Send(e_mail) 
 
-            MsgBox("Email has been sent!") 'user message confirmation 
+            MsgBox("Email has been sent!") 
 
             Close()
 
         Catch ex As Exception
-            MsgBox("Error ocurred. Please, check your information and internet connection and try again.", MsgBoxStyle.Critical, "")
+            MsgBox("An Error ocurred. Please, check your information and internet connection and try again.", MsgBoxStyle.Critical, "")
         End Try
     End Sub
 
@@ -53,9 +53,9 @@ Public Class MailClient
 
         If openFileDialog1.ShowDialog = DialogResult.OK Then
 
-            fullPath = Path.GetFullPath(openFileDialog1.FileName) ' gets path from file
+            fullPath = Path.GetFullPath(openFileDialog1.FileName)
 
-            lblFileName.Text = fullPath ' sets path value
+            lblFileName.Text = fullPath 
 
         End If
 
