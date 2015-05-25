@@ -19,9 +19,7 @@ Public Class PlainTextEdt
     Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As EventArgs) Handles txtPlainText.TextChanged
 
         Dim chrCount As Integer
-        ' Dim wordCount = New Regex("\w+").Matches(s).Count
-
-        ' character count
+    
         If String.IsNullOrEmpty(txtPlainText.Text) = False Then
             chrCount = txtPlainText.Text.Length
             ' ReSharper disable once LocalizableElement
@@ -32,10 +30,7 @@ Public Class PlainTextEdt
             lblChar.Text = "Characters: 0"
         End If
 
-        ' word count
         Static rex As New System.Text.RegularExpressions.Regex("\b", System.Text.RegularExpressions.RegexOptions.Compiled Or System.Text.RegularExpressions.RegexOptions.Multiline)
-
-        '' **
 
         lblWords.Text = "Words: " & (rex.Matches(txtPlainText.Text).Count / 2).ToString()
 
