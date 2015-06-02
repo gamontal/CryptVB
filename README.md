@@ -7,5 +7,7 @@ Text encryption. Made in Visual Basic.
   * RC2 (Rivest Cipher)
   * AES (Advanced Encryption Standard)
   
+### Warning 
 
+ Do not use this in any context where actual security is required! Use for learning purposes only.
     
