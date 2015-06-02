@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{719759B7-78EF-459D-B737-1D98278E1D51}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MPGP.My.MyApplication</StartupObject>
-    <RootNamespace>MPGP</RootNamespace>
-    <AssemblyName>MPGP</AssemblyName>
+    <StartupObject>CryptVB.My.MyApplication</StartupObject>
+    <RootNamespace>CryptVB</RootNamespace>
+    <AssemblyName>CryptVB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -40,7 +40,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>MPGP.xml</DocumentationFile>
+    <DocumentationFile>CryptVB.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -50,7 +50,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>MPGP.xml</DocumentationFile>
+    <DocumentationFile>CryptVB.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -194,7 +194,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="MPGP_TemporaryKey.pfx" />
+    <None Include="CryptVB_TemporaryKey.pfx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

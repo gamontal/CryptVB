@@ -137,3 +137,8 @@ C:\Users\admin\Documents\GitHub\MPGP\obj\Debug\MPGP.PasswordAuthentication.resou
 C:\Users\admin\Documents\GitHub\MPGP\obj\Debug\MPGP.vbproj.GenerateResource.Cache
 C:\Users\admin\Documents\GitHub\MPGP\obj\Debug\MPGP.exe.manifest
 C:\Users\admin\Documents\GitHub\MPGP\obj\Debug\MPGP.application
+C:\Users\admin\Desktop\CryptVB-master\bin\Debug\MPGP.exe.config
+C:\Users\admin\Desktop\CryptVB-master\obj\Debug\MPGP.vbproj.ResolveComReference.cache
+C:\Users\admin\Desktop\CryptVB-master\obj\Debug\MPGP.exe
+C:\Users\admin\Desktop\CryptVB-master\obj\Debug\MPGP.xml
+C:\Users\admin\Desktop\CryptVB-master\obj\Debug\MPGP.pdb
