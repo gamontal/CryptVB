@@ -1,7 +1,7 @@
-# MPGP
+# CryptVB
 Text encryption. Made in Visual Basic.
 
-### Supported algorithms:
+### Algorithms:
 
   * DES (Data Encryption Standard) & Triple DES
   * RC2 (Rivest Cipher)
