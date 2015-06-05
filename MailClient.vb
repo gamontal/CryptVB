@@ -12,13 +12,13 @@ Public Class MailClient
         Dim password As String = txtPassword.Text
         Dim recipient As String = txtTo.Text
 
-        Dim SMTP As New SmtpClient("smtp.gmail.com") ' allows applications to send emails by using the Simple Mail Transfer Protocol (SMTP)
+        Dim SMTP As New SmtpClient("smtp.gmail.com") 
 
         SMTP.Port = 587 ' gets or sets the port used for SMTP transactions
         SMTP.EnableSsl = True ' uses Secure Sockets Layer to encrypt data
         SMTP.Credentials = New Net.NetworkCredential(username, password) ' credentials used to authenticate the sender
 
-        Dim e_mail As New MailMessage() ' represents email message
+        Dim e_mail As New MailMessage() 
 
         e_mail.From = New MailAddress(username) 
         e_mail.To.Add(recipient) 
@@ -45,7 +45,7 @@ Public Class MailClient
 
         openFileDialog1.CheckFileExists = True
         openFileDialog1.CheckPathExists = True
-        openFileDialog1.DefaultExt = "txt" ' default extension
+        openFileDialog1.DefaultExt = "txt"
         openFileDialog1.FileName = ""
         openFileDialog1.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
         openFileDialog1.Multiselect = False
