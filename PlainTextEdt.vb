@@ -22,11 +22,11 @@ Public Class PlainTextEdt
     
         If String.IsNullOrEmpty(txtPlainText.Text) = False Then
             chrCount = txtPlainText.Text.Length
-            ' ReSharper disable once LocalizableElement
+
             lblChar.Text = "Characters: " & chrCount.ToString()
         End If
         If String.IsNullOrEmpty(txtPlainText.Text) Then
-            ' ReSharper disable once LocalizableElement
+        
             lblChar.Text = "Characters: 0"
         End If
 
