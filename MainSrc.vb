@@ -7,7 +7,7 @@ Public Class MainSrc
     Private Const CancelClicked As String = ""
     ReadOnly saveFileDialog1 As New SaveFileDialog() 
     ReadOnly openFileDialog1 As New OpenFileDialog() 
-    Dim oReader As StreamReader ' file finder
+    Dim oReader As StreamReader 
     Dim savedFilepath As String
     ReadOnly i As New PlainTextEdt
     ReadOnly c As New PswrdCreation
@@ -16,7 +16,7 @@ Public Class MainSrc
     Dim textReturnedPlain As String = ""
     ReadOnly cMsg As New ShowTextWnd
 
-    ' ENCIPHER 
+    
     Private Sub btnEncipher_Click(sender As Object, e As EventArgs) Handles btnEncipher.Click
 
         If cmbAlgorithm.Text = "RC2" Or cmbAlgorithm.Text = "rc2" Then
@@ -40,7 +40,7 @@ Public Class MainSrc
         End If
 
     End Sub
-    ' DECIPHER 
+   
     Private Sub btnDecipher_Click(sender As Object, e As EventArgs) Handles btnDecipher.Click
 
         If cmbAlgorithm.Text = "RC2" Or cmbAlgorithm.Text = "rc2" Then
