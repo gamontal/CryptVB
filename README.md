@@ -1,5 +1,5 @@
 # CryptVB
-Text encryption. Made in Visual Basic.
+A very simple cryptosystem. Made in Visual Basic.
 
 ### Algorithms:
 
