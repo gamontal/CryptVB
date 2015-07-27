@@ -133,7 +133,7 @@ Public Class Main
 
 
 
-            Dim wrapper As New TripleDESclass(password)
+            Dim wrapper As New TripleDESen(password)
             Dim cipherText As String = wrapper.EncryptData(plainText)
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
@@ -305,7 +305,7 @@ Public Class Main
 
 
 
-            Dim wrapper As New RC2class(password)
+            Dim wrapper As New RC2en(password)
             Dim cipherText As String = wrapper.EncryptData(plainText)
 
             MsgBox("Encryption complete.", MsgBoxStyle.Information, "")
@@ -477,7 +477,7 @@ Public Class Main
                 Dim password As String = textReturned ' prompts user for password input
 
                 If password <> "" Then
-                    Dim wrapper As New TripleDESclass(password)
+                    Dim wrapper As New TripleDESen(password)
 
                     ' DecryptData throws if the wrong password is used. 
                     Try
@@ -591,7 +591,7 @@ Public Class Main
                 Dim password As String = textReturned ' prompts user for password input
 
                 If password <> "" Then
-                    Dim wrapper As New RC2class(password)
+                    Dim wrapper As New RC2en(password)
 
                     ' DecryptData throws if the wrong password is used. 
                     Try

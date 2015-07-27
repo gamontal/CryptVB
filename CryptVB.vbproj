@@ -158,8 +158,8 @@
     <Compile Include="WriteFile.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RC2class.vb" />
-    <Compile Include="TripleDESclass.vb" />
+    <Compile Include="RC2en.vb" />
+    <Compile Include="TripleDESen.vb" />
     <Compile Include="PasswordAuthentication.Designer.vb">
       <DependentUpon>PasswordAuthentication.vb</DependentUpon>
     </Compile>
