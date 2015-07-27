@@ -1,7 +1,7 @@
 ﻿Imports System
 Imports System.IO
 Imports System.Security.Cryptography
-Public NotInheritable Class AESclass
+Public NotInheritable Class AESen
     Private ReadOnly aes As New AesCryptoServiceProvider
 
     Private Function TruncateHash(

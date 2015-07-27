@@ -107,7 +107,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AESclass.vb" />
+    <Compile Include="AESen.vb" />
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="StringValidation.vb" />
     <Compile Include="ShowTextWnd.Designer.vb">
@@ -116,7 +116,7 @@
     <Compile Include="ShowTextWnd.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DESclass.vb" />
+    <Compile Include="DESen.vb" />
     <Compile Include="ChkEncrypt.vb" />
     <Compile Include="MailClient.Designer.vb">
       <DependentUpon>MailClient.vb</DependentUpon>
@@ -124,10 +124,10 @@
     <Compile Include="MailClient.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainSrc.Designer.vb">
-      <DependentUpon>MainSrc.vb</DependentUpon>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainSrc.vb">
+    <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PswrdCreation.Designer.vb">
@@ -152,10 +152,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="PswrdConfirm.vb" />
-    <Compile Include="PlainTextEdt.Designer.vb">
-      <DependentUpon>PlainTextEdt.vb</DependentUpon>
+    <Compile Include="WriteFile.Designer.vb">
+      <DependentUpon>WriteFile.vb</DependentUpon>
     </Compile>
-    <Compile Include="PlainTextEdt.vb">
+    <Compile Include="WriteFile.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RC2class.vb" />
@@ -174,8 +174,8 @@
     <EmbeddedResource Include="MailClient.resx">
       <DependentUpon>MailClient.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainSrc.resx">
-      <DependentUpon>MainSrc.vb</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PswrdCreation.resx">
       <DependentUpon>PswrdCreation.vb</DependentUpon>
@@ -186,8 +186,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlainTextEdt.resx">
-      <DependentUpon>PlainTextEdt.vb</DependentUpon>
+    <EmbeddedResource Include="WriteFile.resx">
+      <DependentUpon>WriteFile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordAuthentication.resx">
       <DependentUpon>PasswordAuthentication.vb</DependentUpon>

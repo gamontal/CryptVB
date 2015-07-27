@@ -1,5 +1,5 @@
 ﻿Imports System.Security.Cryptography
-Public NotInheritable Class DESclass
+Public NotInheritable Class DESen
     Private des As New DESCryptoServiceProvider
 
     Private Function TruncateHash(

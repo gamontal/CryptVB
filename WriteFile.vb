@@ -1,5 +1,5 @@
 ﻿Imports Microsoft.Office.Interop
-Public Class PlainTextEdt
+Public Class WriteFile
     Protected MBlankValid1 As Boolean = True
     Protected MReturnText1 As String = ""
 

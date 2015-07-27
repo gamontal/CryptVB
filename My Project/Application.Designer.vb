@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.CryptVB.MainSrc
+            Me.MainForm = Global.CryptVB.Main
         End Sub
     End Class
 End Namespace
