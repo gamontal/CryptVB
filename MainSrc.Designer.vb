@@ -51,7 +51,7 @@ Partial Class MainSrc
         Me.btnEncipher.Size = New System.Drawing.Size(174, 25)
         Me.btnEncipher.TabIndex = 0
         Me.btnEncipher.TabStop = False
-        Me.btnEncipher.Text = "&Encipher/"
+        Me.btnEncipher.Text = "&Write File"
         Me.btnEncipher.UseVisualStyleBackColor = False
         '
         'btnDecipher
@@ -71,7 +71,7 @@ Partial Class MainSrc
         Me.btnDecipher.Size = New System.Drawing.Size(174, 25)
         Me.btnDecipher.TabIndex = 0
         Me.btnDecipher.TabStop = False
-        Me.btnDecipher.Text = "/&Decipher"
+        Me.btnDecipher.Text = "&Open File"
         Me.btnDecipher.UseVisualStyleBackColor = False
         '
         'btnUnhide
