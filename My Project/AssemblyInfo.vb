@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("EncryptAndDecryptProject")> 
+<Assembly: AssemblyTitle("CryptVB")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Hewlett-Packard")> 
-<Assembly: AssemblyProduct("EncryptAndDecryptProject")> 
+<Assembly: AssemblyProduct("CryptVB")> 
 <Assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2014")> 
 <Assembly: AssemblyTrademark("")> 
 
