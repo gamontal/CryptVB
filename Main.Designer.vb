@@ -134,7 +134,7 @@ Partial Class Main
         Me.cmbAlgorithm.TabIndex = 14
         Me.cmbAlgorithm.Text = "Encryption algorithm"
         '
-        'MainSrc
+        'Main
         '
         Me.AcceptButton = Me.btnEncipher
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -149,12 +149,11 @@ Partial Class Main
         Me.Controls.Add(Me.btnEncipher)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.HelpButton = True
         Me.HelpProvider1.SetHelpString(Me, "")
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "MainSrc"
+        Me.Name = "Main"
         Me.HelpProvider1.SetShowHelp(Me, True)
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
