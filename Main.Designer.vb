@@ -24,129 +24,80 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
-        Me.btnEncipher = New System.Windows.Forms.Button()
-        Me.btnDecipher = New System.Windows.Forms.Button()
         Me.tooltip = New System.Windows.Forms.ToolTip(Me.components)
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
-        Me.btnUnhide = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnEmail = New System.Windows.Forms.Button()
         Me.cmbAlgorithm = New System.Windows.Forms.ComboBox()
+        Me.btnClose = New MetroFramework.Controls.MetroButton()
+        Me.btnWrite = New MetroFramework.Controls.MetroButton()
+        Me.btnOpen = New MetroFramework.Controls.MetroButton()
+        Me.btnUnhide = New MetroFramework.Controls.MetroButton()
+        Me.btnEmail = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
-        '
-        'btnEncipher
-        '
-        Me.btnEncipher.BackColor = System.Drawing.Color.Transparent
-        Me.btnEncipher.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEncipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnEncipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnEncipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnEncipher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEncipher.ForeColor = System.Drawing.Color.Black
-        Me.HelpProvider1.SetHelpString(Me.btnEncipher, "Encrypt text. (you can set your file's destination once you create your password)" &
-        "")
-        Me.btnEncipher.Location = New System.Drawing.Point(17, 35)
-        Me.btnEncipher.Name = "btnEncipher"
-        Me.HelpProvider1.SetShowHelp(Me.btnEncipher, True)
-        Me.btnEncipher.Size = New System.Drawing.Size(174, 25)
-        Me.btnEncipher.TabIndex = 0
-        Me.btnEncipher.TabStop = False
-        Me.btnEncipher.Text = "&Write File"
-        Me.btnEncipher.UseVisualStyleBackColor = False
-        '
-        'btnDecipher
-        '
-        Me.btnDecipher.BackColor = System.Drawing.Color.Transparent
-        Me.btnDecipher.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDecipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnDecipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnDecipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnDecipher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDecipher.ForeColor = System.Drawing.Color.Black
-        Me.HelpProvider1.SetHelpString(Me.btnDecipher, "Decrypt text. ( *Hidden files will become visible once you decipher them. To chan" &
-        "ge this setting, go to the file's properties, check hidden and click ok )")
-        Me.btnDecipher.Location = New System.Drawing.Point(17, 66)
-        Me.btnDecipher.Name = "btnDecipher"
-        Me.HelpProvider1.SetShowHelp(Me.btnDecipher, True)
-        Me.btnDecipher.Size = New System.Drawing.Size(174, 25)
-        Me.btnDecipher.TabIndex = 0
-        Me.btnDecipher.TabStop = False
-        Me.btnDecipher.Text = "&Open File"
-        Me.btnDecipher.UseVisualStyleBackColor = False
-        '
-        'btnUnhide
-        '
-        Me.btnUnhide.BackColor = System.Drawing.Color.Transparent
-        Me.btnUnhide.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUnhide.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnUnhide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnUnhide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnUnhide.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.btnUnhide.ForeColor = System.Drawing.Color.Black
-        Me.btnUnhide.Location = New System.Drawing.Point(17, 128)
-        Me.btnUnhide.Name = "btnUnhide"
-        Me.btnUnhide.Size = New System.Drawing.Size(174, 25)
-        Me.btnUnhide.TabIndex = 2
-        Me.btnUnhide.Text = "&Unhide File"
-        Me.btnUnhide.UseVisualStyleBackColor = False
-        '
-        'btnClose
-        '
-        Me.btnClose.BackColor = System.Drawing.Color.Transparent
-        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.btnClose.ForeColor = System.Drawing.Color.Black
-        Me.btnClose.Location = New System.Drawing.Point(17, 159)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(174, 25)
-        Me.btnClose.TabIndex = 3
-        Me.btnClose.Text = "&Close"
-        Me.btnClose.UseVisualStyleBackColor = False
-        '
-        'btnEmail
-        '
-        Me.btnEmail.BackColor = System.Drawing.Color.Transparent
-        Me.btnEmail.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEmail.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
-        Me.btnEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.btnEmail.ForeColor = System.Drawing.Color.Black
-        Me.btnEmail.Location = New System.Drawing.Point(17, 97)
-        Me.btnEmail.Name = "btnEmail"
-        Me.btnEmail.Size = New System.Drawing.Size(174, 25)
-        Me.btnEmail.TabIndex = 10
-        Me.btnEmail.Text = "E&MAIL"
-        Me.btnEmail.UseVisualStyleBackColor = False
         '
         'cmbAlgorithm
         '
         Me.cmbAlgorithm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbAlgorithm.FormattingEnabled = True
         Me.cmbAlgorithm.Items.AddRange(New Object() {"RC2", "DES", "3DES", "AES"})
-        Me.cmbAlgorithm.Location = New System.Drawing.Point(17, 199)
+        Me.cmbAlgorithm.Location = New System.Drawing.Point(21, 226)
         Me.cmbAlgorithm.Name = "cmbAlgorithm"
-        Me.cmbAlgorithm.Size = New System.Drawing.Size(174, 23)
+        Me.cmbAlgorithm.Size = New System.Drawing.Size(166, 23)
         Me.cmbAlgorithm.TabIndex = 14
         Me.cmbAlgorithm.Text = "Encryption algorithm"
         '
+        'btnClose
+        '
+        Me.btnClose.Location = New System.Drawing.Point(21, 188)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(166, 31)
+        Me.btnClose.TabIndex = 19
+        Me.btnClose.Text = "Close"
+        '
+        'btnWrite
+        '
+        Me.btnWrite.Location = New System.Drawing.Point(21, 36)
+        Me.btnWrite.Name = "btnWrite"
+        Me.btnWrite.Size = New System.Drawing.Size(166, 31)
+        Me.btnWrite.Style = MetroFramework.MetroColorStyle.Silver
+        Me.btnWrite.TabIndex = 20
+        Me.btnWrite.Text = "Write File"
+        '
+        'btnOpen
+        '
+        Me.btnOpen.Location = New System.Drawing.Point(21, 74)
+        Me.btnOpen.Name = "btnOpen"
+        Me.btnOpen.Size = New System.Drawing.Size(166, 31)
+        Me.btnOpen.TabIndex = 21
+        Me.btnOpen.Text = "Open File"
+        '
+        'btnUnhide
+        '
+        Me.btnUnhide.Location = New System.Drawing.Point(21, 112)
+        Me.btnUnhide.Name = "btnUnhide"
+        Me.btnUnhide.Size = New System.Drawing.Size(166, 31)
+        Me.btnUnhide.TabIndex = 22
+        Me.btnUnhide.Text = "Unhide File"
+        '
+        'btnEmail
+        '
+        Me.btnEmail.Location = New System.Drawing.Point(21, 150)
+        Me.btnEmail.Name = "btnEmail"
+        Me.btnEmail.Size = New System.Drawing.Size(166, 31)
+        Me.btnEmail.TabIndex = 23
+        Me.btnEmail.Text = "EMAIL"
+        '
         'Main
         '
-        Me.AcceptButton = Me.btnEncipher
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle
-        Me.ClientSize = New System.Drawing.Size(209, 238)
-        Me.Controls.Add(Me.cmbAlgorithm)
-        Me.Controls.Add(Me.btnUnhide)
+        Me.ClientSize = New System.Drawing.Size(209, 275)
         Me.Controls.Add(Me.btnEmail)
+        Me.Controls.Add(Me.btnUnhide)
+        Me.Controls.Add(Me.btnOpen)
+        Me.Controls.Add(Me.btnWrite)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnDecipher)
-        Me.Controls.Add(Me.btnEncipher)
+        Me.Controls.Add(Me.cmbAlgorithm)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HelpProvider1.SetHelpString(Me, "")
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -155,16 +106,17 @@ Partial Class Main
         Me.Resizable = False
         Me.HelpProvider1.SetShowHelp(Me, True)
         Me.ShowIcon = False
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Theme = MetroFramework.MetroThemeStyle.Light
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnEncipher As System.Windows.Forms.Button
-    Friend WithEvents btnDecipher As System.Windows.Forms.Button
     Friend WithEvents tooltip As System.Windows.Forms.ToolTip
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider
-    Friend WithEvents btnUnhide As System.Windows.Forms.Button
-    Friend WithEvents btnClose As System.Windows.Forms.Button
-    Friend WithEvents btnEmail As System.Windows.Forms.Button
     Friend WithEvents cmbAlgorithm As System.Windows.Forms.ComboBox
+    Friend WithEvents btnClose As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnWrite As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnOpen As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnUnhide As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnEmail As MetroFramework.Controls.MetroButton
 End Class

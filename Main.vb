@@ -17,7 +17,7 @@ Public Class Main
     ReadOnly cMsg As New ShowTextWnd
 
 
-    Private Sub btnEncipher_Click(sender As Object, e As EventArgs) Handles btnEncipher.Click
+    Private Sub btnWrite_Click(sender As Object, e As EventArgs) Handles btnWrite.Click
 
         If cmbAlgorithm.Text = "RC2" Or cmbAlgorithm.Text = "rc2" Then
             RC2encryption()
@@ -41,7 +41,7 @@ Public Class Main
 
     End Sub
 
-    Private Sub btnDecipher_Click(sender As Object, e As EventArgs) Handles btnDecipher.Click
+    Private Sub btnOpen_Click(sender As Object, e As EventArgs) Handles btnOpen.Click
 
         If cmbAlgorithm.Text = "RC2" Or cmbAlgorithm.Text = "rc2" Then
             RC2decryption()
@@ -677,13 +677,8 @@ Public Class Main
         MailClient.Show()
     End Sub
 
-
-    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Close()
-    End Sub
-
     Private Sub MPGPmainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Shown
-        btnEncipher.Focus()
+        btnWrite.Focus()
     End Sub
 
 End Class

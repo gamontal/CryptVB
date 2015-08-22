@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CryptVB.exe" size="1168384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CryptVB.exe" size="1166848">
       <assemblyIdentity name="CryptVB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mpPa8FSdx6GHU2cMz9rROk5nimB7o05eEvzkLk6tIQU=</dsig:DigestValue>
+        <dsig:DigestValue>6PJD+xq08ejVkYSA9Aquok+5FhT+/vvFzh0eeNpz8G0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
