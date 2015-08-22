@@ -1,4 +1,4 @@
-﻿Imports Microsoft.Office.Interop
+﻿
 Public Class WriteFile
     Protected MBlankValid1 As Boolean = True
     Protected MReturnText1 As String = ""
@@ -78,23 +78,6 @@ Public Class WriteFile
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         txtPlainText.Clear()
         txtPlainText.Focus()
-    End Sub
-
-    Private Sub btnSpCheck_Click(sender As Object, e As EventArgs) Handles btnSpCheck.Click
-        If txtPlainText.Text.Length > 0 Then
-            Dim wordApp As New Word.Application
-            wordApp.Visible = False
-            Dim doc As Word.Document = wordApp.Documents.Add()
-            Dim range As Word.Range
-            range = doc.Range()
-            range.Text = txtPlainText.Text
-            doc.Activate()
-            doc.CheckSpelling()
-            Dim chars() As Char = {CType(vbCr, Char), CType(vbLf, Char)}
-            txtPlainText.Text = doc.Range().Text.Trim(chars)
-            doc.Close(SaveChanges:=False)
-            wordApp.Quit()
-        End If
     End Sub
 
     Protected Overrides Sub WndProc(ByRef m As Message)
