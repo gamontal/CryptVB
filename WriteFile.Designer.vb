@@ -147,11 +147,10 @@ Partial Class WriteFile
         Me.lnkBold.TabStop = True
         Me.lnkBold.Text = "Bold"
         '
-        'InputBoxTxt
+        'WriteFile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.CancelButton = Me.btnCcl1
         Me.ClientSize = New System.Drawing.Size(844, 554)
         Me.Controls.Add(Me.GroupBox1)
@@ -165,7 +164,7 @@ Partial Class WriteFile
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "InputBoxTxt"
+        Me.Name = "WriteFile"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

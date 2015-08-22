@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CryptVB.exe.manifest" size="3454">
+    <dependentAssembly dependencyType="install" codebase="CryptVB.exe.manifest" size="5522">
       <assemblyIdentity name="CryptVB.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>16GzCVK//cDbmhAPSZOo7IqP6nGI3S/HDeWuYw32tcQ=</dsig:DigestValue>
+        <dsig:DigestValue>6zV8p9/0rTp6x6JYVvIjjGh2cwTXB1KQDJrj9pAkl64=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

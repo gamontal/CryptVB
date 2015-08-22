@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Main
-    Inherits System.Windows.Forms.Form
+    Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -41,11 +41,11 @@ Partial Class Main
         Me.btnEncipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnEncipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnEncipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnEncipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEncipher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEncipher.ForeColor = System.Drawing.Color.Black
-        Me.HelpProvider1.SetHelpString(Me.btnEncipher, "Encrypt text. (you can set your file's destination once you create your password)" & _
+        Me.HelpProvider1.SetHelpString(Me.btnEncipher, "Encrypt text. (you can set your file's destination once you create your password)" &
         "")
-        Me.btnEncipher.Location = New System.Drawing.Point(17, 17)
+        Me.btnEncipher.Location = New System.Drawing.Point(17, 35)
         Me.btnEncipher.Name = "btnEncipher"
         Me.HelpProvider1.SetShowHelp(Me.btnEncipher, True)
         Me.btnEncipher.Size = New System.Drawing.Size(174, 25)
@@ -61,11 +61,11 @@ Partial Class Main
         Me.btnDecipher.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnDecipher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnDecipher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnDecipher.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDecipher.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDecipher.ForeColor = System.Drawing.Color.Black
-        Me.HelpProvider1.SetHelpString(Me.btnDecipher, "Decrypt text. ( *Hidden files will become visible once you decipher them. To chan" & _
+        Me.HelpProvider1.SetHelpString(Me.btnDecipher, "Decrypt text. ( *Hidden files will become visible once you decipher them. To chan" &
         "ge this setting, go to the file's properties, check hidden and click ok )")
-        Me.btnDecipher.Location = New System.Drawing.Point(17, 48)
+        Me.btnDecipher.Location = New System.Drawing.Point(17, 66)
         Me.btnDecipher.Name = "btnDecipher"
         Me.HelpProvider1.SetShowHelp(Me.btnDecipher, True)
         Me.btnDecipher.Size = New System.Drawing.Size(174, 25)
@@ -81,9 +81,9 @@ Partial Class Main
         Me.btnUnhide.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnUnhide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnUnhide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnUnhide.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
+        Me.btnUnhide.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnUnhide.ForeColor = System.Drawing.Color.Black
-        Me.btnUnhide.Location = New System.Drawing.Point(17, 110)
+        Me.btnUnhide.Location = New System.Drawing.Point(17, 128)
         Me.btnUnhide.Name = "btnUnhide"
         Me.btnUnhide.Size = New System.Drawing.Size(174, 25)
         Me.btnUnhide.TabIndex = 2
@@ -97,9 +97,9 @@ Partial Class Main
         Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.DimGray
         Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.btnClose.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnClose.ForeColor = System.Drawing.Color.Black
-        Me.btnClose.Location = New System.Drawing.Point(17, 141)
+        Me.btnClose.Location = New System.Drawing.Point(17, 159)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(174, 25)
         Me.btnClose.TabIndex = 3
@@ -114,9 +114,9 @@ Partial Class Main
         Me.btnEmail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnEmail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnEmail.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!)
+        Me.btnEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
         Me.btnEmail.ForeColor = System.Drawing.Color.Black
-        Me.btnEmail.Location = New System.Drawing.Point(17, 79)
+        Me.btnEmail.Location = New System.Drawing.Point(17, 97)
         Me.btnEmail.Name = "btnEmail"
         Me.btnEmail.Size = New System.Drawing.Size(174, 25)
         Me.btnEmail.TabIndex = 10
@@ -128,7 +128,7 @@ Partial Class Main
         Me.cmbAlgorithm.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbAlgorithm.FormattingEnabled = True
         Me.cmbAlgorithm.Items.AddRange(New Object() {"RC2", "DES", "3DES", "AES"})
-        Me.cmbAlgorithm.Location = New System.Drawing.Point(17, 181)
+        Me.cmbAlgorithm.Location = New System.Drawing.Point(17, 199)
         Me.cmbAlgorithm.Name = "cmbAlgorithm"
         Me.cmbAlgorithm.Size = New System.Drawing.Size(174, 23)
         Me.cmbAlgorithm.TabIndex = 14
@@ -139,8 +139,8 @@ Partial Class Main
         Me.AcceptButton = Me.btnEncipher
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(209, 216)
+        Me.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle
+        Me.ClientSize = New System.Drawing.Size(209, 238)
         Me.Controls.Add(Me.cmbAlgorithm)
         Me.Controls.Add(Me.btnUnhide)
         Me.Controls.Add(Me.btnEmail)
@@ -148,15 +148,14 @@ Partial Class Main
         Me.Controls.Add(Me.btnDecipher)
         Me.Controls.Add(Me.btnEncipher)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.HelpProvider1.SetHelpString(Me, "")
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "Main"
+        Me.Resizable = False
         Me.HelpProvider1.SetShowHelp(Me, True)
         Me.ShowIcon = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Theme = MetroFramework.MetroThemeStyle.Light
         Me.ResumeLayout(False)
 
     End Sub
