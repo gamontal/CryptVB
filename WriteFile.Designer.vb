@@ -22,44 +22,18 @@ Partial Class WriteFile
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnDone1 = New System.Windows.Forms.Button()
-        Me.btnCcl1 = New System.Windows.Forms.Button()
         Me.txtPlainText = New System.Windows.Forms.TextBox()
-        Me.btnReset = New System.Windows.Forms.Button()
-        Me.btnSpCheck = New System.Windows.Forms.Button()
-        Me.lblWords = New System.Windows.Forms.Label()
-        Me.lblChar = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lnkRegular = New System.Windows.Forms.LinkLabel()
         Me.lnkBold = New System.Windows.Forms.LinkLabel()
+        Me.btnClear = New MetroFramework.Controls.MetroButton()
+        Me.btnSpCheck = New MetroFramework.Controls.MetroButton()
+        Me.lblWords = New MetroFramework.Controls.MetroLabel()
+        Me.lblChar = New MetroFramework.Controls.MetroLabel()
+        Me.btnCcl1 = New MetroFramework.Controls.MetroButton()
+        Me.btnDone1 = New MetroFramework.Controls.MetroButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btnDone1
-        '
-        Me.btnDone1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDone1.ForeColor = System.Drawing.Color.Black
-        Me.btnDone1.Location = New System.Drawing.Point(784, 525)
-        Me.btnDone1.Name = "btnDone1"
-        Me.btnDone1.Size = New System.Drawing.Size(48, 22)
-        Me.btnDone1.TabIndex = 2
-        Me.btnDone1.TabStop = False
-        Me.btnDone1.Text = "Done"
-        Me.btnDone1.UseVisualStyleBackColor = True
-        '
-        'btnCcl1
-        '
-        Me.btnCcl1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCcl1.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnCcl1.FlatAppearance.BorderColor = System.Drawing.Color.Red
-        Me.btnCcl1.ForeColor = System.Drawing.Color.Red
-        Me.btnCcl1.Location = New System.Drawing.Point(728, 525)
-        Me.btnCcl1.Name = "btnCcl1"
-        Me.btnCcl1.Size = New System.Drawing.Size(50, 23)
-        Me.btnCcl1.TabIndex = 3
-        Me.btnCcl1.TabStop = False
-        Me.btnCcl1.Text = "Cancel"
-        Me.btnCcl1.UseVisualStyleBackColor = True
         '
         'txtPlainText
         '
@@ -73,48 +47,11 @@ Partial Class WriteFile
         Me.txtPlainText.Size = New System.Drawing.Size(820, 503)
         Me.txtPlainText.TabIndex = 4
         '
-        'btnReset
-        '
-        Me.btnReset.Location = New System.Drawing.Point(12, 525)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(87, 23)
-        Me.btnReset.TabIndex = 5
-        Me.btnReset.Text = "Clear screen"
-        Me.btnReset.UseVisualStyleBackColor = True
-        '
-        'btnSpCheck
-        '
-        Me.btnSpCheck.Location = New System.Drawing.Point(105, 525)
-        Me.btnSpCheck.Name = "btnSpCheck"
-        Me.btnSpCheck.Size = New System.Drawing.Size(71, 23)
-        Me.btnSpCheck.TabIndex = 6
-        Me.btnSpCheck.Text = "Spell check"
-        Me.btnSpCheck.UseVisualStyleBackColor = True
-        Me.btnSpCheck.Visible = False
-        '
-        'lblWords
-        '
-        Me.lblWords.AutoSize = True
-        Me.lblWords.Location = New System.Drawing.Point(182, 530)
-        Me.lblWords.Name = "lblWords"
-        Me.lblWords.Size = New System.Drawing.Size(44, 13)
-        Me.lblWords.TabIndex = 7
-        Me.lblWords.Text = "Words: "
-        '
-        'lblChar
-        '
-        Me.lblChar.AutoSize = True
-        Me.lblChar.Location = New System.Drawing.Point(286, 530)
-        Me.lblChar.Name = "lblChar"
-        Me.lblChar.Size = New System.Drawing.Size(64, 13)
-        Me.lblChar.TabIndex = 8
-        Me.lblChar.Text = "Characters: "
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lnkRegular)
         Me.GroupBox1.Controls.Add(Me.lnkBold)
-        Me.GroupBox1.Location = New System.Drawing.Point(417, 521)
+        Me.GroupBox1.Location = New System.Drawing.Point(527, 522)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(172, 26)
         Me.GroupBox1.TabIndex = 9
@@ -147,20 +84,71 @@ Partial Class WriteFile
         Me.lnkBold.TabStop = True
         Me.lnkBold.Text = "Bold"
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(12, 525)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 10
+        Me.btnClear.Text = "Clear Screen"
+        '
+        'btnSpCheck
+        '
+        Me.btnSpCheck.Location = New System.Drawing.Point(93, 525)
+        Me.btnSpCheck.Name = "btnSpCheck"
+        Me.btnSpCheck.Size = New System.Drawing.Size(75, 23)
+        Me.btnSpCheck.TabIndex = 11
+        Me.btnSpCheck.Text = "Spell Check"
+        '
+        'lblWords
+        '
+        Me.lblWords.AutoSize = True
+        Me.lblWords.CustomBackground = True
+        Me.lblWords.Location = New System.Drawing.Point(183, 527)
+        Me.lblWords.Name = "lblWords"
+        Me.lblWords.Size = New System.Drawing.Size(82, 19)
+        Me.lblWords.TabIndex = 12
+        Me.lblWords.Text = "Word count:"
+        '
+        'lblChar
+        '
+        Me.lblChar.AutoSize = True
+        Me.lblChar.CustomBackground = True
+        Me.lblChar.Location = New System.Drawing.Point(325, 527)
+        Me.lblChar.Name = "lblChar"
+        Me.lblChar.Size = New System.Drawing.Size(105, 19)
+        Me.lblChar.TabIndex = 13
+        Me.lblChar.Text = "Character count:"
+        '
+        'btnCcl1
+        '
+        Me.btnCcl1.Location = New System.Drawing.Point(723, 525)
+        Me.btnCcl1.Name = "btnCcl1"
+        Me.btnCcl1.Size = New System.Drawing.Size(55, 23)
+        Me.btnCcl1.TabIndex = 14
+        Me.btnCcl1.Text = "Cancel"
+        '
+        'btnDone1
+        '
+        Me.btnDone1.Location = New System.Drawing.Point(784, 525)
+        Me.btnDone1.Name = "btnDone1"
+        Me.btnDone1.Size = New System.Drawing.Size(48, 23)
+        Me.btnDone1.TabIndex = 15
+        Me.btnDone1.Text = "Done"
+        '
         'WriteFile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.CancelButton = Me.btnCcl1
         Me.ClientSize = New System.Drawing.Size(844, 554)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnDone1)
+        Me.Controls.Add(Me.btnCcl1)
         Me.Controls.Add(Me.lblChar)
         Me.Controls.Add(Me.lblWords)
         Me.Controls.Add(Me.btnSpCheck)
-        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtPlainText)
-        Me.Controls.Add(Me.btnCcl1)
-        Me.Controls.Add(Me.btnDone1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -174,14 +162,14 @@ Partial Class WriteFile
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnDone1 As System.Windows.Forms.Button
-    Friend WithEvents btnCcl1 As System.Windows.Forms.Button
     Friend WithEvents txtPlainText As System.Windows.Forms.TextBox
-    Friend WithEvents btnReset As System.Windows.Forms.Button
-    Friend WithEvents btnSpCheck As System.Windows.Forms.Button
-    Friend WithEvents lblWords As System.Windows.Forms.Label
-    Friend WithEvents lblChar As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents lnkRegular As System.Windows.Forms.LinkLabel
     Friend WithEvents lnkBold As System.Windows.Forms.LinkLabel
+    Friend WithEvents btnClear As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnSpCheck As MetroFramework.Controls.MetroButton
+    Friend WithEvents lblWords As MetroFramework.Controls.MetroLabel
+    Friend WithEvents lblChar As MetroFramework.Controls.MetroLabel
+    Friend WithEvents btnCcl1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnDone1 As MetroFramework.Controls.MetroButton
 End Class

@@ -23,49 +23,13 @@ Partial Class PswrdCreation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PswrdCreation))
-        Me.txtEntry = New System.Windows.Forms.TextBox()
-        Me.btnCcl = New System.Windows.Forms.Button()
-        Me.btnDone = New System.Windows.Forms.Button()
         Me.lblPrompt = New System.Windows.Forms.Label()
         Me.lblVerify = New System.Windows.Forms.Label()
-        Me.txtVerify = New System.Windows.Forms.TextBox()
+        Me.txtEntry = New MetroFramework.Controls.MetroTextBox()
+        Me.txtVerify = New MetroFramework.Controls.MetroTextBox()
+        Me.btnDone = New MetroFramework.Controls.MetroButton()
+        Me.btnCcl = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
-        '
-        'txtEntry
-        '
-        Me.txtEntry.BackColor = System.Drawing.Color.LightGray
-        Me.txtEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtEntry.ForeColor = System.Drawing.Color.Black
-        Me.txtEntry.Location = New System.Drawing.Point(13, 25)
-        Me.txtEntry.Name = "txtEntry"
-        Me.txtEntry.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.txtEntry.Size = New System.Drawing.Size(298, 20)
-        Me.txtEntry.TabIndex = 6
-        '
-        'btnCcl
-        '
-        Me.btnCcl.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCcl.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnCcl.ForeColor = System.Drawing.Color.Black
-        Me.btnCcl.Location = New System.Drawing.Point(257, 95)
-        Me.btnCcl.Name = "btnCcl"
-        Me.btnCcl.Size = New System.Drawing.Size(54, 23)
-        Me.btnCcl.TabIndex = 5
-        Me.btnCcl.TabStop = False
-        Me.btnCcl.Text = "Cancel"
-        Me.btnCcl.UseVisualStyleBackColor = True
-        '
-        'btnDone
-        '
-        Me.btnDone.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDone.ForeColor = System.Drawing.Color.Black
-        Me.btnDone.Location = New System.Drawing.Point(205, 95)
-        Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(46, 23)
-        Me.btnDone.TabIndex = 4
-        Me.btnDone.TabStop = False
-        Me.btnDone.Text = "Done"
-        Me.btnDone.UseVisualStyleBackColor = True
         '
         'lblPrompt
         '
@@ -86,35 +50,57 @@ Partial Class PswrdCreation
         Me.lblVerify.TabIndex = 8
         Me.lblVerify.Text = "Verify:"
         '
+        'txtEntry
+        '
+        Me.txtEntry.Location = New System.Drawing.Point(15, 25)
+        Me.txtEntry.Name = "txtEntry"
+        Me.txtEntry.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.txtEntry.Size = New System.Drawing.Size(296, 23)
+        Me.txtEntry.TabIndex = 10
+        Me.txtEntry.UseSystemPasswordChar = True
+        '
         'txtVerify
         '
-        Me.txtVerify.BackColor = System.Drawing.Color.LightGray
-        Me.txtVerify.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtVerify.Location = New System.Drawing.Point(13, 69)
+        Me.txtVerify.Location = New System.Drawing.Point(15, 69)
         Me.txtVerify.Name = "txtVerify"
         Me.txtVerify.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.txtVerify.Size = New System.Drawing.Size(298, 20)
-        Me.txtVerify.TabIndex = 9
+        Me.txtVerify.Size = New System.Drawing.Size(296, 23)
+        Me.txtVerify.TabIndex = 11
+        Me.txtVerify.UseSystemPasswordChar = True
         '
-        'CreatePassword
+        'btnDone
         '
-        Me.AcceptButton = Me.btnDone
+        Me.btnDone.Location = New System.Drawing.Point(205, 100)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(46, 23)
+        Me.btnDone.TabIndex = 12
+        Me.btnDone.Text = "Done"
+        '
+        'btnCcl
+        '
+        Me.btnCcl.Location = New System.Drawing.Point(258, 100)
+        Me.btnCcl.Name = "btnCcl"
+        Me.btnCcl.Size = New System.Drawing.Size(53, 23)
+        Me.btnCcl.TabIndex = 13
+        Me.btnCcl.Text = "Cancel"
+        '
+        'PswrdCreation
+        '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.CancelButton = Me.btnCcl
-        Me.ClientSize = New System.Drawing.Size(324, 124)
-        Me.Controls.Add(Me.txtVerify)
-        Me.Controls.Add(Me.lblVerify)
-        Me.Controls.Add(Me.txtEntry)
-        Me.Controls.Add(Me.lblPrompt)
+        Me.ClientSize = New System.Drawing.Size(324, 131)
         Me.Controls.Add(Me.btnCcl)
         Me.Controls.Add(Me.btnDone)
+        Me.Controls.Add(Me.txtVerify)
+        Me.Controls.Add(Me.txtEntry)
+        Me.Controls.Add(Me.lblVerify)
+        Me.Controls.Add(Me.lblPrompt)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "CreatePassword"
+        Me.Name = "PswrdCreation"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -122,10 +108,10 @@ Partial Class PswrdCreation
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txtEntry As System.Windows.Forms.TextBox
-    Friend WithEvents btnCcl As System.Windows.Forms.Button
-    Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents lblPrompt As System.Windows.Forms.Label
     Friend WithEvents lblVerify As System.Windows.Forms.Label
-    Friend WithEvents txtVerify As System.Windows.Forms.TextBox
+    Friend WithEvents txtEntry As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtVerify As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents btnDone As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnCcl As MetroFramework.Controls.MetroButton
 End Class

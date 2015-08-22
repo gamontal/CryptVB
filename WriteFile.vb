@@ -3,11 +3,11 @@ Public Class WriteFile
     Protected MBlankValid1 As Boolean = True
     Protected MReturnText1 As String = ""
 
-    Public Overloads Function ShowDialog( _
-      ByVal titleText1 As Object, _
-      ByVal defaultText1 As String, _
-      ByRef enteredTextPlainText As String, _
-      ByVal blankValid1 As Boolean) As Windows.Forms.DialogResult
+    Public Overloads Function ShowDialog(
+      ByVal titleText1 As Object,
+      ByVal defaultText1 As String,
+      ByRef enteredTextPlainText As String,
+      ByVal blankValid1 As Boolean) As DialogResult
         MBlankValid1 = blankValid1
         Text = titleText1
         txtPlainText.Text = defaultText1
@@ -16,23 +16,23 @@ Public Class WriteFile
         Return DialogResult
     End Function
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As EventArgs) Handles txtPlainText.TextChanged
+    Private Sub txtPlainText_TextChanged(ByVal sender As System.Object, ByVal e As EventArgs) Handles txtPlainText.TextChanged
 
         Dim chrCount As Integer
-    
+
         If String.IsNullOrEmpty(txtPlainText.Text) = False Then
             chrCount = txtPlainText.Text.Length
 
-            lblChar.Text = "Characters: " & chrCount.ToString()
+            lblChar.Text = "Character count: " & chrCount.ToString()
         End If
         If String.IsNullOrEmpty(txtPlainText.Text) Then
-        
-            lblChar.Text = "Characters: 0"
+
+            lblChar.Text = "Character count: 0"
         End If
 
         Static rex As New System.Text.RegularExpressions.Regex("\b", System.Text.RegularExpressions.RegexOptions.Compiled Or System.Text.RegularExpressions.RegexOptions.Multiline)
 
-        lblWords.Text = "Words: " & (rex.Matches(txtPlainText.Text).Count / 2).ToString()
+        lblWords.Text = "Word count: " & (rex.Matches(txtPlainText.Text).Count / 2).ToString()
 
 
         If txtPlainText.Text = "" Then
@@ -52,7 +52,7 @@ Public Class WriteFile
         End If
     End Sub
 
-    Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As EventArgs) Handles btnDone1.Click
+    Private Sub btnDone1_Click(ByVal sender As System.Object, ByVal e As EventArgs) Handles btnDone1.Click
         DialogResult = Windows.Forms.DialogResult.OK
         MReturnText1 = txtPlainText.Text
         txtPlainText.Focus()
@@ -75,7 +75,7 @@ Public Class WriteFile
         End Get
     End Property
 
-    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtPlainText.Clear()
         txtPlainText.Focus()
     End Sub
@@ -104,14 +104,6 @@ Public Class WriteFile
 
     Private Sub lnkRegular_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkRegular.LinkClicked
         txtPlainText.Font = New Font(txtPlainText.Font, FontStyle.Regular)
-        txtPlainText.Focus()
-    End Sub
-
-    Private Sub btnIn_Click(sender As Object, e As EventArgs)
-        txtPlainText.Focus()
-    End Sub
-
-    Private Sub btnDe_Click(sender As Object, e As EventArgs)
         txtPlainText.Focus()
     End Sub
 

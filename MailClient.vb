@@ -4,7 +4,7 @@ Imports System.IO
 Public Class MailClient
 
     ReadOnly openFileDialog1 As New OpenFileDialog()
-    Dim fullPath As String 
+    Dim fullPath As String
 
     Private Sub btnSend_Click(sender As Object, e As EventArgs) Handles btnSend.Click
 
@@ -12,27 +12,27 @@ Public Class MailClient
         Dim password As String = txtPassword.Text
         Dim recipient As String = txtTo.Text
 
-        Dim SMTP As New SmtpClient("smtp.gmail.com") 
+        Dim SMTP As New SmtpClient("smtp.gmail.com")
 
         SMTP.Port = 587 ' gets or sets the port used for SMTP transactions
         SMTP.EnableSsl = True ' uses Secure Sockets Layer to encrypt data
         SMTP.Credentials = New Net.NetworkCredential(username, password) ' credentials used to authenticate the sender
 
-        Dim e_mail As New MailMessage() 
+        Dim e_mail As New MailMessage()
 
-        e_mail.From = New MailAddress(username) 
-        e_mail.To.Add(recipient) 
-        e_mail.Subject = txtSubject.Text 
-        e_mail.Body = "Sent using MPGP software." 
+        e_mail.From = New MailAddress(username)
+        e_mail.To.Add(recipient)
+        e_mail.Subject = txtSubject.Text
+        e_mail.Body = "Sent using MPGP software."
 
-        Dim msgAtt As New Attachment(fullPath) 
+        Dim msgAtt As New Attachment(fullPath)
 
-        e_mail.Attachments.Add(msgAtt) 
+        e_mail.Attachments.Add(msgAtt)
 
         Try
-            SMTP.Send(e_mail) 
+            SMTP.Send(e_mail)
 
-            MsgBox("Email has been sent!") 
+            MsgBox("Email has been sent!")
 
             Close()
 
@@ -55,13 +55,13 @@ Public Class MailClient
 
             fullPath = Path.GetFullPath(openFileDialog1.FileName)
 
-            lblFileName.Text = fullPath 
+            lblFileName.Text = fullPath
 
         End If
 
     End Sub
 
-    Private Sub txtChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged, txtPassword.TextChanged, txtSubject.TextChanged, lblFileName.TextChanged
+    Private Sub txtChanged(sender As Object, e As EventArgs) Handles lblFileName.TextChanged
 
         If txtUsername.Text = "" Or txtPassword.Text = "" Or txtSubject.Text = "" Or lblFileName.Text = "" Or txtTo.Text = "" Then
 
@@ -76,7 +76,7 @@ Public Class MailClient
     End Sub
 
     '///
-    Public Function Test(ByVal x As String, ByVal y As String, _
+    Public Function Test(ByVal x As String, ByVal y As String,
                               ByVal comparison As StringComparison)
         If x.EndsWith(y, comparison) Then
             Return True
