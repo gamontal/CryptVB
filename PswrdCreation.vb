@@ -24,24 +24,6 @@
         Else
             btnDone.Enabled = True
         End If
-        If String.IsNullOrEmpty(txtEntry.Text) = True And String.IsNullOrEmpty(txtVerify.Text) = True Then
-            txtEntry.BackColor = Color.LightGray
-            txtVerify.BackColor = Color.LightGray
-        Else
-
-            If txtEntry.Text = txtVerify.Text Then
-                txtVerify.BackColor = Color.LightBlue
-
-            ElseIf String.IsNullOrEmpty(txtEntry.Text) = False And String.IsNullOrEmpty(txtVerify.Text) = True Then
-
-                txtVerify.BackColor = Color.LightGray
-
-            Else
-
-                txtVerify.BackColor = Color.LightSalmon
-
-            End If
-        End If
     End Sub
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As EventArgs) Handles btnDone.Click
