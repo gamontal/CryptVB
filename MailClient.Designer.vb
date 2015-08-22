@@ -209,7 +209,9 @@ Partial Class MailClient
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "MailClient"
+        Me.Resizable = False
         Me.ShowIcon = False
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
