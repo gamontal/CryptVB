@@ -78,6 +78,7 @@ Partial Class PswrdCreation
         '
         'btnCcl
         '
+        Me.btnCcl.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCcl.Location = New System.Drawing.Point(258, 100)
         Me.btnCcl.Name = "btnCcl"
         Me.btnCcl.Size = New System.Drawing.Size(53, 23)
@@ -86,9 +87,11 @@ Partial Class PswrdCreation
         '
         'PswrdCreation
         '
+        Me.AcceptButton = Me.btnDone
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnCcl
         Me.ClientSize = New System.Drawing.Size(324, 131)
         Me.Controls.Add(Me.btnCcl)
         Me.Controls.Add(Me.btnDone)
