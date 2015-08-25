@@ -23,7 +23,7 @@ Public Class MailClient
         e_mail.From = New MailAddress(username)
         e_mail.To.Add(recipient)
         e_mail.Subject = txtSubject.Text
-        e_mail.Body = "Sent using MPGP software."
+        e_mail.Body = "Sent using CryptVB."
 
         Dim msgAtt As New Attachment(fullPath)
 
