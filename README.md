@@ -1,3 +1,4 @@
+### Project no longer maintained 
 # CryptVB
 A very simple cryptosystem. Made in Visual Basic.
 
